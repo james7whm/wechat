@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @EnableAutoConfiguration
 public class SampleController {
 
-//    @RequestMapping("/")
-//    @ResponseBody
-//    String home() {
-//        return "Hello World!";
-//    }
+    @RequestMapping("/")
+    @ResponseBody
+    String home() {
+        return "Hello World!";
+    }
 
     @RequestMapping(method = RequestMethod.GET,value = "/checkwechat")
     String checkWechat(@RequestParam("signature") String signature,@RequestParam("timestamp") String timestamp,@RequestParam("nonce") String nonce,@RequestParam("echostr") String echostr){
