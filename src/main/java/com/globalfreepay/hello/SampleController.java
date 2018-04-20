@@ -20,7 +20,7 @@ public class SampleController {
 //        return "Hello World!";
 //    }
 
-    @RequestMapping(method = RequestMethod.GET,value = "/")
+    @RequestMapping(method = RequestMethod.GET,value = "/checkwechat")
     String checkWechat(@RequestParam("signature") String signature,@RequestParam("timestamp") String timestamp,@RequestParam("nonce") String nonce,@RequestParam("echostr") String echostr){
         if(SignUtil.checkSignature(signature,timestamp,nonce)){
             return echostr;
