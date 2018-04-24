@@ -1,4 +1,4 @@
-package com.globalfreepay.message.beans;
+package com.globalfreepay.message.request.beans;
 
 /**
  * 视频消息类

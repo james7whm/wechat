@@ -1,14 +1,13 @@
-package com.globalfreepay.message.beans;
+package com.globalfreepay.message.response.beans;
 
-/**
- * 链接消息类
- */
-public class LinkMessage {
-    //消息标题
+public class Article {
+    //图片消息名称
     private String Title;
-    //消息描述
+    //图文消息描述
     private String Description;
-    //消息链接
+    //图片链接，支持JPG、PNG格式，较好的效果为大图640x320，小图80x80
+    private String PicUrl;
+    //点击图文消息跳转链接
     private String Url;
 
     public String getTitle() {
@@ -25,6 +24,14 @@ public class LinkMessage {
 
     public void setDescription(String description) {
         Description = description;
+    }
+
+    public String getPicUrl() {
+        return PicUrl;
+    }
+
+    public void setPicUrl(String picUrl) {
+        PicUrl = picUrl;
     }
 
     public String getUrl() {
