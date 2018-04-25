@@ -13,6 +13,7 @@ import java.util.Map;
 
 @Service
 public class CoreServiceImpl implements CoreService{
+
     @Override
     public String processRequest(HttpServletRequest request){
         //XML格式的消息数据
